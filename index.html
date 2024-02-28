@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Text Editor</title>
+
+    <!-- tailwind css cdn --------- -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome kit --------- -->
+
+    <script src="https://kit.fontawesome.com/ce63bc3280.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <section class="my-10 bg-[#94C4FE] py-8">
+        <h1 class="text-center font-bold text-4xl">My Text Editor</h1>
+
+        <div class="container mx-auto bg-[#BED9FD] border-2 border-black p-4 my-10">
+            <div class="pb-2 border-b-2 border-[#607591] flex justify-between mb-5">
+                <!-- icon div -- -->
+                <div class="">
+                    <button id="bold-btn" class="hover:bg-[#3981F5] py-1 px-2 rounded-lg">
+                        <i class="fa-solid fa-bold text-xl"></i>
+                    </button>
+
+                    <button id="italic-btn" class="hover:bg-[#3981F5] py-1 px-2 rounded-lg">
+                        <i class="fa-solid fa-italic text-xl"></i>
+                    </button>
+
+                    <button id="underline-btn" class="hover:bg-[#3981F5] py-1 px-2 rounded-lg">
+                        <i class="fa-solid fa-underline text-xl"></i>
+                    </button>
+                </div>
+
+                <!-- text align icon --------- -->
+                <div>
+                    <button id="text-left" class="hover:bg-[#3981F5] py-1 px-2 rounded-lg">
+                        <i class="fa-solid fa-align-left"></i>
+                    </button>
+
+                    <button id="text-center" class="hover:bg-[#3981F5] py-1 px-2 rounded-lg">
+                        <i class="fa-solid fa-align-center"></i>
+                    </button>
+
+                    <button id="text-right" class="hover:bg-[#3981F5] py-1 px-2 rounded-lg">
+                        <i class="fa-solid fa-align-right"></i>
+                    </button>
+
+                    <button id="text-justify" class="hover:bg-[#3981F5] py-1 px-2 rounded-lg">
+                        <i class="fa-solid fa-align-justify"></i>
+                    </button>
+                </div>
+
+                <!-- rest icons ------ -->
+                <div>
+                    <input class="text-[#000] bg-transparent focus-visible:bg-blue-400 p-1 w-[50px] font-bold"
+                        type="number" name="17" value="17" id="">
+
+
+
+                    <input type="color" name="" id="">
+                </div>
+
+            </div>
+
+            <!-- text Area ----- -->
+
+            <div>
+
+                <textarea name="" id="text-area" class="w-full p-4" rows="20"></textarea>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
