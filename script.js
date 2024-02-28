@@ -90,14 +90,34 @@ document.getElementById('text-justify').addEventListener('click', function () {
 
 // font size change ---------------------------------
 
-document.getElementById('font-size').addEventListener('click', function () {
-    const inputFontSize = document.getElementById('font-size').value;
-    const textArea = document.getElementById('text-area');
-    console.log(textArea.innerText)
+// document.getElementById('font-size').addEventListener('click', function () {
+//     const inputFontSize = document.getElementById('font-size').value;
+//     const textArea = document.getElementById('text-area');
+//     console.log(textArea.innerText)
 
-    textArea.style.fontSize = inputFontSize + 'px';
+//     textArea.style.fontSize = inputFontSize + 'px';
 
+// })
+
+const fontSize = document.getElementById('font-size');
+
+['click', 'keyup'].forEach(ev => {
+    fontSize.addEventListener(ev, function () {
+        const inputFontSize = document.getElementById('font-size').value;
+
+        const textArea = document.getElementById('text-area');
+        textArea.style.fontSize = inputFontSize + 'px';
+
+    })
 })
+
+
+
+
+
+
+
+
 
 document.getElementById('input-color').addEventListener('input', function () {
     const inputColor = document.getElementById('input-color');
