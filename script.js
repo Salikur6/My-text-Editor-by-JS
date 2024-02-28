@@ -88,4 +88,19 @@ document.getElementById('text-justify').addEventListener('click', function () {
 })
 
 
+// font size change ---------------------------------
 
+document.getElementById('font-size').addEventListener('click', function (event) {
+    const inputFontSize = document.getElementById('font-size').value;
+    const textArea = document.getElementById('text-area');
+    textArea.style.fontSize = inputFontSize + 'px';
+
+})
+
+document.getElementById('input-color').addEventListener('input', function () {
+    const inputColor = document.getElementById('input-color');
+    const textArea = document.getElementById('text-area');
+
+    textArea.style.color = inputColor.value;
+
+})
