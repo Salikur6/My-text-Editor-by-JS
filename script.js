@@ -90,9 +90,11 @@ document.getElementById('text-justify').addEventListener('click', function () {
 
 // font size change ---------------------------------
 
-document.getElementById('font-size').addEventListener('click', function (event) {
+document.getElementById('font-size').addEventListener('click', function () {
     const inputFontSize = document.getElementById('font-size').value;
     const textArea = document.getElementById('text-area');
+    console.log(textArea.innerText)
+
     textArea.style.fontSize = inputFontSize + 'px';
 
 })
